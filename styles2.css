@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+:root {
+    font-family: 'Montserrat';
+}
+
+/*NAVBAR*/
+.color-fondo {
+    background-color: crimson;
+}
+.hover:hover{
+    color: black;
+    transition: .2s;
+}
+
+/*INDEX-IMAGEN FONDO*/
+.bg-container {
+    display: flex;
+    width: auto;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-img {
+    background-image: url(./assets/wp6_2.jpg);
+    background-size: cover;
+    transform: translateY(-8%);
+    filter: blur(2px);
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    z-index: -1;
+}
+
+.main-logo {
+    position: absolute;
+    top: 25%;
+}
+
+.animate__animated animate__fadeInDown {
+    animation: fadeInDown;
+    animation-duration: 5s;
+}
+
+/*INDEX-NOTICIAS*/
+p {
+    margin-left: 10vh;
+}
+
+img {
+    margin-right: 10vh;
+}
+
+.p {
+    margin-top: 5vh;
+}
+
+.ult-noticias {
+    font-size: 3.5em;
+    text-decoration: underline 1vh solid crimson;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-align: center;
+}
+
+.subtitulo {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-align: justify;
+    margin-top: 2vh;
+}
+
+/*FOOTER*/
+.texto-footer {
+    color: white;
+}
+
+.footer {
+    margin-top: 10vh;
+}
+
+/* CALENDARIO */
+.calendario-titulo{
+    margin: 5vh 0px;
+    width: 100%;
+    font-size: 3em;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline 10px solid crimson;
+}
+.calendario-titulo {
+    justify-content: center;
+    margin: 5vh 0px;
+    width: 100%;
+    font-size: 3em;
+    text-decoration: underline 10px solid crimson;
+}
+
+.container-grid {
+    display: grid;
+    box-sizing: border-box;
+    width: 90%;
+    grid-template-areas: "card1 card2 card3 card4"
+        "card5 card6 card7 card8"
+        "card9 card10 card11 card12";
+    gap: 25px;
+    margin: auto;
+    justify-items: center;
+}
+
+.cal-card1 {
+    grid-area: card1;
+}
+
+.cal-card2 {
+    grid-area: card2;
+}
+
+.cal-card3 {
+    grid-area: card3;
+}
+
+.cal-card4 {
+    grid-area: card4;
+}
+
+.cal-card5 {
+    grid-area: card5;
+}
+
+.cal-card6 {
+    grid-area: card6;
+}
+
+.cal-card7 {
+    grid-area: card7;
+}
+
+.cal-card8 {
+    grid-area: card8;
+}
+
+.cal-card9 {
+    grid-area: card9;
+}
+
+.cal-card10 {
+    grid-area: card10;
+}
+
+.cal-card11 {
+    grid-area: card11;
+}
+
+.cal-card12 {
+    grid-area: card12;
+}
+
+.cal-card1,
+.cal-card2,
+.cal-card3,
+.cal-card4,
+.cal-card5,
+.cal-card6,
+.cal-card7,
+.cal-card8,
+.cal-card9,
+.cal-card10,
+.cal-card11,
+.cal-card12 {
+    border-radius: 10px;
+    background-color: crimson;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cal-card:hover {
+    transform: scale(103%);
+    transition: ease-in-out .2s;
+    box-shadow:
+        1px 1px 3.7px rgba(225, 30, 30, 0.084),
+        2.4px 2.3px 8.8px rgba(225, 30, 30, 0.088),
+        4.5px 4.4px 16.5px rgba(225, 30, 30, 0.36),
+        8px 7.8px 29.5px rgba(255, 30, 30, 0.072),
+        15px 14.6px 55.1px rgba(255, 30, 30, 0.26),
+        36px 35px 132px rgba(225, 30, 30, 0.22);
+}
+
+.calcard-img {
+    background-color: chartreuse;
+    background-size: cover;
+    width: 368px;
+    height: 368px;
+    margin: 20px;
+}
+
+.calcard-img-1 {
+    background-image: url(./assets/saudiarabiagp.jpg);
+    background-size: cover;
+}
+
+.calcard-img-2 {
+    background-image: url(./assets/melbournegp.jpg);
+}
+
+.calcard-img-3 {
+    background-image: url(./assets/imolagp.jpg);
+
+}
+
+.calcard-title {
+    color: rgb(250, 250, 250);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+    width: 100%;
+}
+
+.calcard-subtitle {
+    color: rgb(15, 15, 15);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.8em;
+    width: 100%;
+}
+
+.card-p {
+    color: rgb(250, 250, 250);
+    font-size: 1em;
+    width: 90%;
+    height: fit-content;
+    margin: 5px;
+    padding: 5px;
+    text-align: justify;
+    justify-content: center;
+}
+
+/*TARJETAS EQUIPO*/
+.carta_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.carta {
+    background: rgb(220, 20, 60);
+    width: 400px;
+    height: 700px;
+    border-radius: 10px;
+    margin: 20px;
+    background: crimson;
+}
+
+.carta:hover {
+    box-shadow:
+        1px 1px 3.7px rgba(225, 30, 30, 0.084),
+        2.4px 2.3px 8.8px rgba(225, 30, 30, 0.088),
+        4.5px 4.4px 16.5px rgba(225, 30, 30, 0.36),
+        8px 7.8px 29.5px rgba(255, 30, 30, 0.072),
+        15px 14.6px 55.1px rgba(255, 30, 30, 0.26),
+        36px 35px 132px rgba(225, 30, 30, 0.22);
+    transform: scale(103%);
+    transition: ease-in-out .2s;
+}
+
+.carta-img {
+    background-color: chartreuse;
+    border-radius: 10px;
+    width: 23em;
+    height: 23em;
+    margin: 1em;
+    justify-content: center;
+}
+
+.carta-img-1 {
+    background-image: url(./assets/guenther-steiner-team-principa-1.jpg);
+    background-size: cover;
+}
+
+.carta-img-2 {
+    background-image: url(./assets/perfil-kevin-magnussen-2022-soymotor.png);
+}
+
+.carta-img-3 {
+    background-image: url(./assets/mick-schumacher-2021-soymotor.jpg);
+}
+
+.carta-title {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.carta-h5 {
+    color: white;
+    margin-left: 15px;
+    font-size: 1.125em;
+    font-weight: bold;
+}
+
+.teamcarta-p {
+    margin: 10px;
+    font-size: 1em;
+    color: white;
+    height: auto;
+    width: auto;
+}
+
+/*IFRAME GALERIA*/
+.contenedor-iframe {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.contenedor-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*CONTACTO*/
+.contacto {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 3.5em;
+    text-decoration: underline 1vh solid crimson;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+form {
+    background: crimson;
+    padding: 5vh 0;
+    box-shadow: 0 0 6px 0 rgba(26, 9, 9, 0.8);
+    border-radius: 15px;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.form {
+    width: 100%;
+    margin: auto;
+}
+
+form .grupo {
+    position: relative;
+    margin: 45px;
+}
+
+input {
+    background: none;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 80%;
+    border: none;
+    border-bottom: 1px white;
+}
+
+::placeholder {
+    color: whitesmoke
+}
+
+input:focus {
+    outline: none;
+}
+
+label {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+.barra {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before {
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #222, #333);
+    transition: .5s ease width;
+    left: 0;
+}
+
+input:focus~.barra::before {
+    width: 100%;
+}
+
+button {
+    font-family: 'Montserrat';
+    background: #ffffff;
+    border: none;
+    display: block;
+    width: 20%;
+    margin: 10px auto;
+    color: crimson;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    /*CALENDARIO*/
+    .calendario-titulo {
+        text-align: center;
+        margin: 5vh 0px;
+        width: 100%;
+        font-size: 3em;
+        text-decoration: underline 10px solid crimson;
+    }
+    .calendario-titulo{
+        text-align: center;
+        margin: 5vh 0px;
+        width: 100%;
+        font-size: 3em;
+        text-decoration: underline 10px solid crimson;
+        }
+    .container-grid {
+        display: grid;
+        box-sizing: border-box;
+        width: 95%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: "card1 card2 card3"
+            "card4 card5 card6"
+            "card7 card8 card9"
+            "card10 card11 card12";
+        gap: 25px;
+        margin: auto;
+        justify-items: space-around;
+    }
+    /*CONTACTO*/
+    form {
+        width: 80%;
+        }
+        /*EQUIPO*/
+    .card_container {
+        display: grid;
+        width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:"card-1 card-2 card-3";
+    }
+    .card-1{
+        grid-area: card-1;
+    }
+    .card-2{
+        grid-area: card-2;
+    }
+    .card-3{
+        grid-area: card-3;
+    }
+    .card {
+        width: 90%;
+        height: 100%;
+    }
+    .card-img {
+        background-color: chartreuse;
+        width: 220px;
+        height: 220px;
+    }
+    .card-img-1 {
+        background-image: url(./assets/guenther-steiner-team-principa-1.jpg);
+        background-size: cover;
+        margin: 10px auto;
+    }
+    
+    .card-img-2 {
+        background-image: url(./assets/perfil-kevin-magnussen-2022-soymotor.png);
+        background-size: cover;
+        margin: 10px auto;
+    }
+    
+    .card-img-3 {
+        background-image: url(./assets/mick-schumacher-2021-soymotor.jpg);
+        background-size: cover;
+        margin: 10px auto;
+    }
+    
+    .card-title {
+        font-size: 16px;
+    }
+    
+    .card-h5 {
+        font-size: 16px;
+    }
+    
+    .teamcard-p {
+        margin: 5px 5px;
+        font-size: 12px;
+        width: fit-content;
+        height: fit-content;
+}
+}
+@media screen and (max-width: 425px){
+        /*CALENDARIO*/
+        .calendario-titulo{
+            text-align: center;
+            margin: 5vh 0px;
+            width: 100%;
+            font-size: 3em;
+            text-decoration: underline 10px solid crimson;
+        }
+        .container-grid {
+            display: grid;
+            width: 80%;
+            grid-template-columns: repeat(1, 80vw);
+            grid-template-rows: repeat(12, 40vh);
+            grid-template-areas:"card1"
+                                "card2"
+                                "card3"
+                                "card4"
+                                "card5"
+                                "card6"
+                                "card7"
+                                "card8"
+                                "card9"
+                                "card10"
+                                "card11"
+                                "card12";
+            gap: 10px;
+            justify-content: center;
+            margin: auto;
+        }
+        .calcard-img {
+            background-color: chartreuse;
+            width: 85%;
+            height: 60%;
+            margin: 5%;
+            object-fit: cover;
+            background-position: center;
+        }
+        .calcard-title {
+            color: rgb(250, 250, 250);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            text-align: center;
+            font-size: 1.5em;
+            width: 100%;
+        }
+        .calcard-subtitle {
+            color: rgb(15, 15, 15);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            text-align: center;
+            font-size: 1em;
+            width: 100%;
+        }
+        .card-p {
+            color: rgb(250, 250, 250);
+            font-size: .6em;
+            width: 90%;
+            height: fit-content;
+            margin: 5px;
+            padding: 5px;
+            text-align: justify;
+            justify-content: center;
+        }
+        /*CONTACTO*/
+        .contacto{
+            font-size: 3em;
+            margin-bottom: 25px;
+        }
+        form{
+            width: 80%;
+            margin: auto;
+        }
+        button{
+            width: 35%;
+            font-size: 12px;
+        }
+        label{
+            font-size: 14px;
+        }
+        input{
+            font-size: 12px;
+        }
+    
+            /* Equipo */
+    .card_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:"card-1"
+                            "card-2"
+                            "card-3";
+        margin-top: 50px;
+    }
+    .card {
+        width: 90%;
+        height: 95%;
+    }
+    .card-img {
+        width: 250px;
+        height: 250px;
+        margin: 10px;
+        justify-content: center;
+    }
+    
+    .card-img-1 {
+        background-size: cover;
+        margin: 10px auto;
+    }
+    
+    .card-img-2 {
+        background-size: cover;
+        margin: 10px auto;
+    }
+    
+    .card-img-3 {
+        background-size: cover;
+        margin: 10px auto;
+    }
+    
+    .card-title {
+        font-size: 14px;
+    }
+    
+    .card-h5 {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    
+    }
+    
